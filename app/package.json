@@ -1,0 +1,49 @@
+{
+  "name": "node-with-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "clean": "rm -rf public/app",
+    "start": "npm run clean && NODE_ENV=development nodemon src/backend --watch src/backend --exec babel-node --presets @babel/preset-env",
+    "start:production": "npm run clean && npm run build && NODE_ENV=production babel-node src/backend --presets @babel/preset-env"
+  },
+  "author": "Carlos Santana",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.8.3",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.2.0",
+    "webpack-dev-middleware": "^3.6.2",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-notifier": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "redux-devtools-extension": "^2.13.8"
+  }
+}

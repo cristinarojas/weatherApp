@@ -1,0 +1,9 @@
+.Post {
+  h2 {
+    text-transform: capitalize;
+  }
+
+  p::first-letter {
+    text-transform: capitalize;
+  }
+}
