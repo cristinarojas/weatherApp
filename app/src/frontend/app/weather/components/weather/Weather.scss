@@ -1,3 +1,82 @@
+// Styles for search
+.container {
+  margin: 50px;
+  font-family: 'Quicksand', sans-serif;
+
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0px;
+
+    span {
+      color: black;
+      font-weight: 600;
+      margin-right: 5px;
+    }
+  }
+
+  .search {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  button {
+    margin-right: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #11a4c7;
+    color: white;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    thead {
+      background-color: #909090;
+      tr {
+        height: 30px;
+        text-align: left;
+        color: white;
+        th {
+          width: 200px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even)  {
+          background-color: #d2d2d2;
+        }
+
+        td {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+
 body {
   box-sizing: border-box;
   margin: 0px;
@@ -10,6 +89,7 @@ $Blue: #5092CC;
 $weatherBlue: #2559AA;
 $white: #FFF;
 $yellow: #F7FF00;
+
 
 // Weather component styles.
 .weatherContainer {
