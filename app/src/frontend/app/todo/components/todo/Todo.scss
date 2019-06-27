@@ -1,0 +1,37 @@
+.container {
+  margin: 50px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  ul {
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  input {
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  button {
+    margin-right: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: #11a4c7;
+    color: white;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
