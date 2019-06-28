@@ -7,6 +7,7 @@ import styles from './Buttons.scss';
 // Components
 import Button from './Button';
 import Validations from './Validations';
+import InputChecked from './InputChecked';
 
 // Data
 const words = ['home', 'sweet', 'candy', 'love', 'sucess', 'main'];
@@ -24,7 +25,7 @@ class Buttons extends Component  {
             />
           ))
         }
-
+        <InputChecked />
         <Validations />
       </div>
     )
