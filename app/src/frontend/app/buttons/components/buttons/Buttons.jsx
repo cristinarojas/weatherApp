@@ -6,11 +6,10 @@ import styles from './Buttons.scss';
 
 // Components
 import Button from './Button';
+import Validations from './Validations';
 
 // Data
 const words = ['home', 'sweet', 'candy', 'love', 'sucess', 'main'];
-
-
 class Buttons extends Component  {
   render() {
 
@@ -26,6 +25,7 @@ class Buttons extends Component  {
           ))
         }
 
+        <Validations />
       </div>
     )
   }
