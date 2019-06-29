@@ -21,8 +21,8 @@ export const fetchWeatherResponse = payload => dispatch => {
 
 export const fetchWeather = city => dispatch => {
 
-  dispatch(fetchWeatherRequest());
+  fetchWeatherRequest();
 
   Api.fetchWeather(city)
-    .then(response => dispatch(fetchWeatherResponse(response.data)));
+    .then(response => fetchWeatherResponse(response.data));
 };

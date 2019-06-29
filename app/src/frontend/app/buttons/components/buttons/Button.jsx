@@ -22,13 +22,12 @@ class Button extends Component  {
     const { title } = this.props;
     const { ok } = this.state;
 
-    console.log('ok-->', ok)
     return(
       <div className={styles.container}>
         <button
           type="button"
           onClick={() => this.handleAlert(title)}
-          className={`${ok  ? `${styles.ok}` : '' }`}
+          className={`${styles.base} ${ok  ? `${styles.ok}` : '' }`}
         >
           {title}
         </button>{`${ok}`}

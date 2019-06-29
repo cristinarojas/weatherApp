@@ -8,7 +8,7 @@ class Validations extends Component  {
     const name = 'cristina';
     const active = true;
 
-    console.log('name..>', typeof name);
+    //console.log('name..>', typeof name);
     return(
       <div>
         <h2>Validations</h2>
