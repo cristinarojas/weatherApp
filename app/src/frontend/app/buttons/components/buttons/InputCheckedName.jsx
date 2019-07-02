@@ -8,7 +8,14 @@ class InputChecked extends Component {
     check: false
   };
 
-  handleOnChange = (e) => {
+  handleOnChange = ({ target: { name, value, checked } = e }) => {
+    this.setState({
+      [name]: value,
+      check: checked
+    })
+  }
+
+  handleOnChangeok = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
       check: e.target.checked
@@ -17,8 +24,6 @@ class InputChecked extends Component {
 
   render() {
     const { userValue , check, userNum } = this.state;
-    console.log('userValue *******>', userValue)
-    console.log('check ******>', check)
 
     return (
       <div className={styles.container}>

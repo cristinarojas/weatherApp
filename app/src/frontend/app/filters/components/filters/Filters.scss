@@ -7,12 +7,20 @@
   margin: 0 auto;
   margin-top: 10px;
 
-  .base {
-    color: pink;
+  .user {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+    margin-right: 20px;
   }
 
-  .ok {
-    color: green;
+  .letter {
+    color: red;
+  }
+
+  p {
+    color: black;
   }
 
   button {
@@ -24,7 +32,6 @@
     color: white;
     font-size: 14px;
 
-
     &:hover {
       cursor: pointer;
     }
@@ -32,5 +39,9 @@
     &:focus {
       outline: 0;
     }
+  }
+
+  .succes {
+    color: green;
   }
 }

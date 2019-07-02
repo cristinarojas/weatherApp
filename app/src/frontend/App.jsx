@@ -9,6 +9,7 @@ import Todo from './app/todo/container';
 import Tic from './app/tictactoe/container';
 import String from './app/strings/container';
 import Buttons from './app/buttons/container';
+import Filters from './app/filters/container';
 
 // React Exercises
 import Search from './app/search/container';
@@ -24,6 +25,7 @@ const App = () => (
       <Route exact path="/buttons" component={Buttons} />
       <Route exact path="/weather" component={Weather} />
       <Route exact path="/blog/:id" component={Blog} />
+      <Route exact path="/filters" component={Filters} />
     </Switch>
   </BrowserRouter>
 );
