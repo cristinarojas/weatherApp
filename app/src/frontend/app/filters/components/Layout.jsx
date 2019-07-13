@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Filters from './filters/Filters';
+import Sort from './sort/Sort';
 
 const Layout = props => (
   <main>
-    <Filters {...props}/>
+    <Sort {...props}/>
   </main>
 );
 
