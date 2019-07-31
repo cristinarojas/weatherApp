@@ -17,6 +17,8 @@ import SortString from './SortString';
 import SortNumbers from './SortNumbers';
 import ObjectNumbers from './ObjectNumbers';
 import Filter from './Filter';
+import All from './All';
+import Ruggable from './Ruggable';
 
 /*const userIds = [1, 2];
 const users = {
@@ -51,10 +53,7 @@ create a class component UserList that renders the list of users instead of sing
 
 const Filters = () => (
     <>
-      <SortString />
-      <SortNumbers />
-      <ObjectNumbers />
-      <Filter />
+      <Ruggable />
     </>
 );
 

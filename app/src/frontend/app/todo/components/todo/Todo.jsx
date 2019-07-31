@@ -35,7 +35,7 @@ class Todo extends Component  {
 
   render() {
     const { valueTodo, list } = this.state;
-
+    console.log('valueTodo-->', valueTodo)
     return(
       <div className={styles.container}>
         <h1>To do list</h1>
@@ -45,6 +45,8 @@ class Todo extends Component  {
           value={valueTodo}
           onChange={e => this.setState({ valueTodo: e.target.value }) }
         />
+
+        <p>{valueTodo}</p>
 
         <button
           type="submit"

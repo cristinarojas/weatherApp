@@ -1,8 +1,8 @@
 export default [
-  'World Map Ivory Rug',
-  'Ziri Off White Rug',
-  'Halona Stone Rug',
-  'Mariposa Sage Rug',
+  'porld Map Ivory Rug',
+  'viri Off White Rug',
+  'aalona Stone Rug',
+  'aariposa Sage Rug',
   'Lux Natural Rug',
   'Obi Abalone Rug',
   'Leila Creme Vintage Rug',
@@ -10,5 +10,5 @@ export default [
   'Solid Tonal Natural Rug',
   'California Red Rug',
   'Alfombra mexicana',
-  'Ayana Leopard Rug'
+  'byana Leopard Rug'
 ];
